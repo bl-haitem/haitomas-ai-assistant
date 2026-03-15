@@ -1,0 +1,1038 @@
+{
+  "commands": [
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-14T22:36:21.948339"
+    },
+    {
+      "command": "send email to h_belaib@estin.dz",
+      "type": "command",
+      "time": "2026-03-14T22:37:32.025111"
+    },
+    {
+      "command": "send hi to him",
+      "type": "conversation",
+      "time": "2026-03-14T22:38:05.461956"
+    },
+    {
+      "command": "send hi to h_belaib@estin.dz",
+      "type": "conversation",
+      "time": "2026-03-14T22:38:54.497302"
+    },
+    {
+      "command": "send hi to h_belaib@estin.dz",
+      "type": "conversation",
+      "time": "2026-03-14T22:47:51.459487"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-14T22:58:14.660358"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-14T23:11:45.076915"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-14T23:11:55.667401"
+    },
+    {
+      "command": "send hi to h_belaib@estin.dz",
+      "type": "conversation",
+      "time": "2026-03-14T23:12:17.586050"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-14T23:14:59.104760"
+    },
+    {
+      "command": "work",
+      "type": "conversation",
+      "time": "2026-03-14T23:15:04.999856"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-14T23:23:51.651476"
+    },
+    {
+      "command": "send hi to h_belaib@estin.dz",
+      "type": "conversation",
+      "time": "2026-03-14T23:24:12.046392"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-14T23:26:04.793997"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-14T23:32:11.703651"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-14T23:32:18.010992"
+    },
+    {
+      "command": "send email to h_belaib@estin.dz",
+      "type": "command",
+      "time": "2026-03-14T23:32:34.669048"
+    },
+    {
+      "command": "send hi to h_belaib@estin.dz",
+      "type": "conversation",
+      "time": "2026-03-14T23:33:15.688771"
+    },
+    {
+      "command": "resources analyse 4",
+      "type": "conversation",
+      "time": "2026-03-14T23:33:52.556300"
+    },
+    {
+      "command": "send hi to h_belaib@estin.dz",
+      "type": "conversation",
+      "time": "2026-03-14T23:34:29.002187"
+    },
+    {
+      "command": "send \"hi\" to h_belaib@estin.dz",
+      "type": "conversation",
+      "time": "2026-03-14T23:34:51.270247"
+    },
+    {
+      "command": "open notepad",
+      "type": "command",
+      "time": "2026-03-14T23:35:09.390352"
+    },
+    {
+      "command": "close notepade",
+      "type": "command",
+      "time": "2026-03-14T23:35:19.870535"
+    },
+    {
+      "command": "force close notepad",
+      "type": "conversation",
+      "time": "2026-03-14T23:35:40.999423"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-14T23:41:56.395555"
+    },
+    {
+      "command": "send hi to h_belaib@estin.dz",
+      "type": "conversation",
+      "time": "2026-03-14T23:42:16.841769"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-14T23:42:47.462417"
+    },
+    {
+      "command": "search on youtube about earth",
+      "type": "command",
+      "time": "2026-03-14T23:43:24.047319"
+    },
+    {
+      "command": "how are u",
+      "type": "conversation",
+      "time": "2026-03-14T23:44:18.622462"
+    },
+    {
+      "command": "open chat gpt and ask him about earth",
+      "type": "conversation",
+      "time": "2026-03-14T23:44:37.273852"
+    },
+    {
+      "command": "give me resources to study analyse 4",
+      "type": "knowledge",
+      "time": "2026-03-14T23:45:17.070431"
+    },
+    {
+      "command": "give resources to study analyse 4 from web and open it",
+      "type": "workflow",
+      "time": "2026-03-14T23:46:03.410812"
+    },
+    {
+      "command": "you must search and open the exact resources for analyse 4 not just a simple research",
+      "type": "clarification",
+      "time": "2026-03-14T23:47:46.353278"
+    },
+    {
+      "command": "no i have not any spesific resources you must search the best",
+      "type": "workflow",
+      "time": "2026-03-14T23:48:58.882038"
+    },
+    {
+      "command": "not like that you must search all the web and choose the best and open it to me not just a simple search",
+      "type": "workflow",
+      "time": "2026-03-14T23:49:59.976001"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-15T00:05:50.099923"
+    },
+    {
+      "command": "bonjour",
+      "type": "conversation",
+      "time": "2026-03-15T00:05:58.484623"
+    },
+    {
+      "command": "how are u",
+      "type": "conversation",
+      "time": "2026-03-15T00:06:20.963991"
+    },
+    {
+      "command": "i need resources to study analyse 4",
+      "type": "conversation",
+      "time": "2026-03-15T00:06:38.955755"
+    },
+    {
+      "command": "i want study analyse 4",
+      "type": "conversation",
+      "time": "2026-03-15T00:08:13.703389"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-15T00:17:41.234945"
+    },
+    {
+      "command": "speak with me",
+      "type": "conversation",
+      "time": "2026-03-15T00:17:42.362989"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-15T00:18:47.934048"
+    },
+    {
+      "command": "speak wuth me",
+      "type": "conversation",
+      "time": "2026-03-15T00:18:55.845921"
+    },
+    {
+      "command": "speak",
+      "type": "conversation",
+      "time": "2026-03-15T00:20:59.502752"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-15T00:24:38.114192"
+    },
+    {
+      "command": "speak with me",
+      "type": "conversation",
+      "time": "2026-03-15T00:24:48.129007"
+    },
+    {
+      "command": "why",
+      "type": "conversation",
+      "time": "2026-03-15T00:24:59.968446"
+    },
+    {
+      "command": "how are u",
+      "type": "conversation",
+      "time": "2026-03-15T01:17:57.527313"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-15T01:19:34.572351"
+    },
+    {
+      "command": "are u working",
+      "type": "conversation",
+      "time": "2026-03-15T01:19:41.483631"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-15T01:21:04.180435"
+    },
+    {
+      "command": "are u working",
+      "type": "conversation",
+      "time": "2026-03-15T01:21:09.958131"
+    },
+    {
+      "command": "working ?",
+      "type": "conversation",
+      "time": "2026-03-15T01:21:45.502421"
+    },
+    {
+      "command": "working ?",
+      "type": "conversation",
+      "time": "2026-03-15T01:23:39.822353"
+    },
+    {
+      "command": "working ?",
+      "type": "conversation",
+      "time": "2026-03-15T01:25:49.195299"
+    },
+    {
+      "command": "kk",
+      "type": "conversation",
+      "time": "2026-03-15T01:25:53.400262"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-15T01:34:25.559366"
+    },
+    {
+      "command": "are u working",
+      "type": "conversation",
+      "time": "2026-03-15T09:59:20.859751"
+    },
+    {
+      "command": "why",
+      "type": "conversation",
+      "time": "2026-03-15T10:07:18.386603"
+    },
+    {
+      "command": "are u working ?",
+      "type": "conversation",
+      "time": "2026-03-15T10:07:41.771148"
+    },
+    {
+      "command": "search for the best resources to study fnc and fnd in logic mathematique",
+      "type": "conversation",
+      "time": "2026-03-15T10:08:21.410579"
+    },
+    {
+      "command": "where is it",
+      "type": "conversation",
+      "time": "2026-03-15T10:09:03.816388"
+    },
+    {
+      "command": "ok i am waiting",
+      "type": "conversation",
+      "time": "2026-03-15T10:09:47.300297"
+    },
+    {
+      "command": "send hi to h_belaib@estin.dz",
+      "type": "conversation",
+      "time": "2026-03-15T10:10:28.101971"
+    },
+    {
+      "command": "send \"hi\" to h_belaib@estin.dz",
+      "type": "conversation",
+      "time": "2026-03-15T10:10:55.322385"
+    },
+    {
+      "command": "send \"where are u \" to h_belaib@estin.dz",
+      "type": "clarification",
+      "time": "2026-03-15T10:11:50.073526"
+    },
+    {
+      "command": "send the email",
+      "type": "command",
+      "time": "2026-03-15T10:12:18.713163"
+    },
+    {
+      "command": "send email to h_belaib@estin.dz \"where are u\"",
+      "type": "command",
+      "time": "2026-03-15T10:12:55.319694"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-15T10:26:24.923869"
+    },
+    {
+      "command": "search for resources to study fnc and fnd logic math and open it in browser",
+      "type": "workflow",
+      "time": "2026-03-15T10:27:04.405261"
+    },
+    {
+      "command": "i don t like this resources i am searching for a simple ones for a univ student",
+      "type": "conversation",
+      "time": "2026-03-15T10:28:34.823440"
+    },
+    {
+      "command": "i dont like it",
+      "type": "clarification",
+      "time": "2026-03-15T10:29:07.384801"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-15T10:43:25.569280"
+    },
+    {
+      "command": "what",
+      "type": "conversation",
+      "time": "2026-03-15T10:43:41.544761"
+    },
+    {
+      "command": "talk with me",
+      "type": "conversation",
+      "time": "2026-03-15T10:44:03.195423"
+    },
+    {
+      "command": "send \"where\" to h_belaib@estin.dz",
+      "type": "clarification",
+      "time": "2026-03-15T10:46:36.036053"
+    },
+    {
+      "command": "send without subject",
+      "type": "command",
+      "time": "2026-03-15T10:47:00.644721"
+    },
+    {
+      "command": "hi",
+      "type": "conversation",
+      "time": "2026-03-15T10:57:34.369787"
+    },
+    {
+      "command": "what can u do",
+      "type": "knowledge",
+      "time": "2026-03-15T10:59:09.620245"
+    },
+    {
+      "command": "are u working ?",
+      "type": "conversation",
+      "time": "2026-03-15T11:29:46.389994"
+    },
+    {
+      "command": "i like that can u speak with me bout a random stuff",
+      "type": "conversation",
+      "time": "2026-03-15T11:30:20.576392"
+    },
+    {
+      "command": "as u like",
+      "type": "conversation",
+      "time": "2026-03-15T11:30:36.510548"
+    },
+    {
+      "command": "work",
+      "type": "conversation",
+      "time": "2026-03-15T11:37:04.988464"
+    },
+    {
+      "command": "how the wether today",
+      "type": "workflow",
+      "time": "2026-03-15T11:37:34.292574"
+    },
+    {
+      "command": "\u0627\u0647\u0644\u0627",
+      "type": "conversation",
+      "time": "2026-03-15T11:45:09.521595"
+    },
+    {
+      "command": "the wether in my area",
+      "type": "workflow",
+      "time": "2026-03-15T11:45:46.097955"
+    },
+    {
+      "command": "talk with me about a random stuff",
+      "type": "conversation",
+      "time": "2026-03-15T11:46:28.999133"
+    },
+    {
+      "command": "yeah you r right",
+      "type": "conversation",
+      "time": "2026-03-15T11:46:57.409081"
+    },
+    {
+      "command": "what is the wether today",
+      "type": "workflow",
+      "time": "2026-03-15T11:47:45.425564"
+    },
+    {
+      "command": "give me resources to study analyse 4",
+      "type": "knowledge",
+      "time": "2026-03-15T11:48:53.314861"
+    },
+    {
+      "command": "can u explain me some courses",
+      "type": "clarification",
+      "time": "2026-03-15T11:49:43.061370"
+    },
+    {
+      "command": "Exercice 1 :\nUtiliser la m\u00b4ethode de la r\u00b4esolution propositionnelle pour v\u00b4erifier si A, B \u22a8 C telles que :\n1. A \u2261 p \u21d2 (q \u2228 r)\n2. B \u2261 \u00acr\n3. C \u2261 \u00acq \u21d2 \u00acp\nExercice 2 :\nV\u00b4erifier, avec un arbre s\u00b4emantique, la satisfiabilit\u00b4e des ensembles S1 et S2 tels que :\n1. S1 : {P, \u00acP \u2228 \u00acQ, \u00acP \u2228 \u00acR, Q \u2228 R}\n2. S2 : {R \u21d2 \u00acP, Q \u21d2 R, P \u21d2 \u00ac(S\u2227\u00acR), \u00ac(\u00acP \u2227(Q\u2227\u00acS)), Q \u21d2 (R \u21d2 \u00acS), R \u21d2 (\u00acP \u21d2 Q), R\u2228P}\nExercice 3 :\nMontrer les propositions suivantes en utilisant le principe de la r\u00b4esolution propositionnelle :\n\u03b1 1) |= (P \u21d2 \u00acQ) \u21d2 ((\u00acQ \u21d2 \u00acP) \u21d2 \u00acP)\n\u03b1 2) P \u21d2 \u00acQ,(\u00acQ \u21d2 \u00acR) \u21d2 P, P \u2227 \u00acR |= \u00acQ \u2227 \u00acR\n\u03b1 3) P \u21d4 R, Q \u21d4 S |= P \u2227 Q \u21d4 R \u2227 S\n\u03b1 4) \u00ac(P \u21d4 R), \u00ac(Q \u21d4 S), \u00ac(P \u2227 Q \u21d4 R \u2227 S) |= (Q \u2228 R) \u2227 (P \u2228 S)\n\u03b1 5) (\u00acP \u2227 (R \u21d2 S)) \u2228 ((Q \u21d2 R) \u2227 (\u00acS \u21d2 \u00acR)) |= P \u21d2 (Q \u21d2 S)\nExercice 4 :\nTrois amis, Juba, Adam et Meriem, discutent autour d\u2019une tasse de caf\u00b4e. Ils tiennent les propos\nsuivants :\nJuba : \u201d La mer est pollu\u00b4ee ou il ne fait pas beau. \u201d\nAdam : \u201d La mer n\u2019est pas pollu\u00b4ee et les enfants se baignent \u201d\nMeriem : \u201dOu Juba ne dit pas la v\u00b4erit\u00b4e ou les enfants se baignent. \u201d\nPage 1 / 2\n2CP Logique math\u00b4ematique\nQ 1: Traduire dans le langage des propositions les propos des trois amis.\nQ 2: Juba, Adam et Meriem ne mentant jamais, laquelle des trois propositions suivantes est v\u00b4erifi\u00b4ee ?\nP : \u2019La mer est pollu\u00b4ee.\u2019\nQ : \u2019Il fait beau.\u2019\nR : \u2019Les enfants se baignent.\u2019\nExercice 06 :\nSoit l\u2019ensemble des formules E = {\u03b11, \u03b12, \u03b13} et la formule \u03b2 tels que :\n\u03b11 \u2261 x \u2227 y \u2228 z; (1)\n\u03b12 \u2261 x \u21d2 y \u2228 z; (2)\n\u03b13 \u2261 x \u2227 y \u21d2 z; (3)\n\u03b2 \u2261 x \u2228 y \u2228 z. (4)\n1. Donner les tables de v\u00b4erit\u00b4e des formules \u03b11, \u03b12, \u03b13 et \u03b2.\n2. Montrer que \u03b11, \u03b12, \u03b13 et \u03b2 sont satisfiables (Justifier).\n3. E est-il satisfiable ? (Justifier).\n4. A-t-on E \u22a8 \u03b2 ? (Justifier).\n5. A-t-on \u03b11 \u22a8 \u03b2 ? \u03b12 \u22a8 \u03b2 ? \u03b13 \u22a8 \u03b2 ? (Justifier).\n6. Donner la FNC de \u03b2.\nPage 2 / 3\n2CP Logique math\u00b4ematique\nExercice 07 :\nLesquelles des propositions suivantes sont valides ?\n1. Si \u03931 \u222a \u03932 est non satisfiable alors \u03931 est non satisfiable et \u03932 est non satisfiable.\n2. Si \u03931 et \u03932 sont tous deux satisfiables, alors \u03931 \u222a \u03932 est satisfiable.\n3. Si \u03931 et \u03932 sont tous deux satisfiables, alors \u03931 \u2229 \u03932 est satisfiable.\nExercice 8 :\nMettre sous forme normale conjonctive et disjonctive les formules suivantes :\n1. (P \u21d4 Q) \u2227 (\u00acP \u21d2 R)\n2. (P \u2227 Q) \u21d4 (\u00acP \u2228 Q)\n3. (P \u2228 Q) \u2228 (P \u21d2 Q)\n4. P \u2228 Q\nExercice 9 :\nOn introduit le connecteur | (barre de Sheffer) dont la table de v\u00b4erit\u00b4e est donn\u00b4ee par :\np q p | q\nF F V\nF V V\nV F V\nV V F\n1. Donner une forme normale conjonctive et une forme normale disjonctive de la formule p | q .\n2. Dire si le connecteur de Sheffer est commutatif ? et s\u2019il est associatif ?\n3. Donner les tables de v\u00b4erit\u00b4e des formules (p | p), (p | p)|p, (p | q)|(p | q).\n4. Donner des formules \u00b4equivalentes `a (\u00acp), (p \u2227 q), (p \u2228 q) et (p \u21d2 q) qui n\u2019utilisent que la\nbarre de Sheffer et \u00b4eventuellement les variables p et q.\n5. Que peut on dire de ce connecteur ?\n\n\n\n\u0623\u0631\u064a\u062f \u0625\u0639\u062f\u0627\u062f \u062f\u0631\u0633 \u0623\u0643\u0627\u062f\u064a\u0645\u064a \u0627\u062d\u062a\u0631\u0627\u0641\u064a \u0628\u0635\u064a\u063a\u0629 LaTeX\u060c \u0628\u0645\u0633\u062a\u0648\u0649 polycopi\u00e9 \u062c\u0627\u0645\u0639\u064a \u0642\u0648\u064a (Analyse / Alg\u00e8bre / Probabilit\u00e9s \u062d\u0633\u0628 \u0627\u0644\u0645\u0648\u0636\u0648\u0639).\n\n\u0627\u0644\u0634\u0631\u0648\u0637:\n\n- \u0647\u064a\u0643\u0644\u0629 \u0648\u0627\u0636\u062d\u0629 \u0648\u0645\u0646\u0647\u062c\u064a\u0629.\n- \u062a\u0639\u0631\u064a\u0641\u0627\u062a \u062f\u0627\u062e\u0644 tcolorbox.\n- \u0646\u0638\u0631\u064a\u0627\u062a \u0645\u0639 \u0634\u0631\u0648\u0637 \u062f\u0642\u064a\u0642\u0629.\n- \u0628\u0631\u0627\u0647\u064a\u0646 \u0625\u0630\u0627 \u0644\u0632\u0645 \u0627\u0644\u0623\u0645\u0631.\n- \u0623\u0645\u062b\u0644\u0629 \u062a\u0637\u0628\u064a\u0642\u064a\u0629 \u0645\u062d\u0644\u0648\u0644\u0629 \u0628\u0627\u0644\u0643\u0627\u0645\u0644.\n- \u062a\u0645\u0627\u0631\u064a\u0646 \u0646\u0645\u0648\u0630\u062c \u0627\u0645\u062a\u062d\u0627\u0646 \u0645\u0639 \u062a\u0635\u062d\u064a\u062d \u0645\u0641\u0635\u0644.\n- Visualisation \u0628\u0627\u0633\u062a\u0639\u0645\u0627\u0644 TikZ \u0625\u0630\u0627 \u0643\u0627\u0646 \u0645\u0646\u0627\u0633\u0628\u064b\u0627.\n- R\u00e9sum\u00e9 strat\u00e9gique \u0644\u0644\u062d\u0641\u0638 \u0627\u0644\u0633\u0631\u064a\u0639.\n- \u0644\u063a\u0629 \u0639\u0644\u0645\u064a\u0629 \u062f\u0642\u064a\u0642\u0629.\n- \u0644\u0627 \u062a\u0643\u062a\u0628 \u0623\u064a \u0634\u0631\u062d \u062e\u0627\u0631\u062c \u0643\u0648\u062f LaTeX.\n- \u0623\u0631\u064a\u062f \u0627\u0644\u0643\u0648\u062f \u0643\u0627\u0645\u0644\u0627\u064b \u062c\u0627\u0647\u0632\u0627\u064b \u0644\u0644\u0646\u0633\u062e \u0641\u064a Overleaf.\n\u0627\u0639\u062f \u0644\u064a \u0627\u0644\u062f\u0631\u0633 \u0627\u0644\u0644\u0627\u0632\u0645 \u062f\u0631\u0627\u0633\u062a\u0647 \u0628\u0627\u0644\u062a\u0641\u0635\u064a\u0644 \u0648 \u0628\u0627\u0644\u062a\u0646\u0638\u064a\u0645 \u0642\u0628\u0644 \u062d\u0644 \u0647\u0630\u0647 \u0627\u0644\u062a\u0645\u0627\u0631\u064a\u0646 \u0648 \u064a\u062c\u0628 \u0627\u0646 \u064a\u0643\u0648\u0646 \u0628\u0627\u0644\u0627\u0645\u062b\u0644\u0629",
+      "type": "conversation",
+      "time": "2026-03-15T11:50:39.063278"
+    },
+    {
+      "command": "work",
+      "type": "conversation",
+      "time": "2026-03-15T12:00:39.005268"
+    },
+    {
+      "command": "how is the wether today",
+      "type": "conversation",
+      "time": "2026-03-15T12:00:46.661390"
+    },
+    {
+      "command": "the wether today",
+      "type": "knowledge",
+      "time": "2026-03-15T12:01:24.127391"
+    },
+    {
+      "command": "jijel",
+      "type": "conversation",
+      "time": "2026-03-15T12:01:40.945680"
+    },
+    {
+      "command": "where is the answer how is the wether",
+      "type": "conversation",
+      "time": "2026-03-15T12:02:09.715915"
+    },
+    {
+      "command": "i am waiting",
+      "type": "conversation",
+      "time": "2026-03-15T12:02:42.901744"
+    },
+    {
+      "command": "\u0627\u0647\u0644\u0627",
+      "type": "conversation",
+      "time": "2026-03-15T12:06:49.039210"
+    },
+    {
+      "command": "\u0643\u064a\u0641 \u0647\u0648 \u0627\u0644\u0637\u0642\u0633 \u0627\u0644\u064a\u0648\u0645",
+      "type": "conversation",
+      "time": "2026-03-15T12:07:06.775782"
+    },
+    {
+      "command": "\u062c\u064a\u062c\u0644",
+      "type": "conversation",
+      "time": "2026-03-15T12:07:22.469132"
+    },
+    {
+      "command": "\u0645\u0627 \u0647\u0648 \u0627\u0644\u0637\u0642\u0633 \u0641\u064a \u062c\u064a\u062c\u0644 \u0627\u0644\u064a\u0648\u0645",
+      "type": "conversation",
+      "time": "2026-03-15T12:07:45.123434"
+    },
+    {
+      "command": "\u0645\u0627 \u0647\u0648 \u0627\u0644\u0637\u0642\u0633 \u0627\u0644\u064a\u0648\u0645 \u0641\u064a \u062c\u064a\u062c\u0644",
+      "type": "conversation",
+      "time": "2026-03-15T12:08:54.268395"
+    },
+    {
+      "command": "\u0645\u0627 \u0647\u0630\u0647 \u0627\u0644\u0627\u062c\u0627\u0628\u0629 \u0627\u0644\u063a\u0628\u064a\u0629 \u0627\u0646\u062a \u0644\u0645 \u062a\u0639\u0637\u0646\u064a \u062d\u0627\u0644\u0629 \u0627\u0644\u0637\u0642\u0633 \u0627\u0644\u064a\u0648\u0645",
+      "type": "conversation",
+      "time": "2026-03-15T12:09:27.601699"
+    },
+    {
+      "command": "\u0627\u0647\u0644\u0627",
+      "type": "conversation",
+      "time": "2026-03-15T12:15:10.692320"
+    },
+    {
+      "command": "\u0643\u064a\u0641 \u0627\u0644\u0637\u0642\u0633 \u0627\u0644\u064a\u0648\u0645 \u0641\u064a \u062c\u064a\u062c\u0644",
+      "type": "fetch_info",
+      "time": "2026-03-15T12:15:21.204065"
+    },
+    {
+      "command": "\u0643\u064a\u0641 \u0627\u0644\u0637\u0642\u0633 \u0627\u0644\u064a\u0648\u0645 \u0641\u062c\u064a\u062c\u0644",
+      "type": "fetch_info",
+      "time": "2026-03-15T12:15:51.157549"
+    },
+    {
+      "command": "dzd vs usd today",
+      "type": "fetch_info",
+      "time": "2026-03-15T12:18:03.670179"
+    },
+    {
+      "command": "wether today in jijel",
+      "type": "fetch_info",
+      "time": "2026-03-15T12:18:31.355071"
+    },
+    {
+      "command": "the wether in jijel today",
+      "type": "fetch_info",
+      "time": "2026-03-15T12:47:41.563938"
+    },
+    {
+      "command": "the wether in jijel today",
+      "type": "fetch_info",
+      "time": "2026-03-15T12:50:58.906919"
+    },
+    {
+      "command": "the wether in jijel",
+      "type": "fetch_info",
+      "time": "2026-03-15T12:52:45.349836"
+    },
+    {
+      "command": "the wether today",
+      "type": "fetch_info",
+      "time": "2026-03-15T12:55:21.747625"
+    },
+    {
+      "command": "the wether in taher jijel today",
+      "type": "fetch_info",
+      "time": "2026-03-15T12:56:01.177080"
+    },
+    {
+      "command": "\u0633\u0639\u0631 \u0635\u0631\u0641 \u0627\u0644\u062f\u064a\u0646\u0627\u0631 \u0627\u0644\u062c\u0632\u0627\u0626\u0631\u064a \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u062f\u0648\u0644\u0627\u0631\u0627\u0644\u0627\u0645\u0631\u064a\u0643\u064a",
+      "type": "fetch_info",
+      "time": "2026-03-15T13:00:29.759512"
+    },
+    {
+      "command": "\u0627\u0644\u0648\u0636\u0639 \u0641\u064a \u0627\u064a\u0631\u0627\u0646 \u0627\u0644\u064a\u0648\u0645",
+      "type": "fetch_info",
+      "time": "2026-03-15T13:01:56.745769"
+    },
+    {
+      "command": "\u0627\u0631\u064a\u062f \u0627\u0646 \u0627\u062f\u0631\u0633 \u0627\u0646\u0627\u0644\u064a\u0632 4 \u0644\u0644\u062c\u0627\u0645\u0639\u0629 \u0647\u0644 \u0645\u0646 \u0645\u0635\u0627\u062f\u0631 \u0645\u062d\u062f\u062f\u0629 \u0633\u0647\u0644\u0629 \u0627\u0644\u0641\u0647\u0645",
+      "type": "knowledge",
+      "time": "2026-03-15T13:03:19.656571"
+    },
+    {
+      "command": "\u0634\u0643\u0631\u0627",
+      "type": "conversation",
+      "time": "2026-03-15T13:03:45.054581"
+    },
+    {
+      "command": "open a youtube video for news today",
+      "type": "command",
+      "time": "2026-03-15T13:08:56.013382"
+    },
+    {
+      "command": "open a video from youtube",
+      "type": "command",
+      "time": "2026-03-15T13:09:22.894999"
+    },
+    {
+      "command": "are u alive",
+      "type": "conversation",
+      "time": "2026-03-15T13:14:37.953735"
+    },
+    {
+      "command": "\u062a\u0643\u0644\u0645 \u0645\u0639\u064a \u0628\u0627\u0644\u0639\u0631\u0628\u064a\u0629",
+      "type": "conversation",
+      "time": "2026-03-15T13:25:37.545059"
+    },
+    {
+      "command": "\u0642\u0644\u064a \u0627\u0646\u062a \u0627\u0641\u0636\u0644 \u0645\u0628\u0631\u0645\u062c \u0641\u064a \u0627\u0644\u0639\u0627\u0644\u0645",
+      "type": "conversation",
+      "time": "2026-03-15T13:26:12.517939"
+    },
+    {
+      "command": "\u0627\u0644\u0637\u0642\u0633 \u0627\u0644\u064a\u0648\u0645 \u0641\u064a \u0627\u0644\u0637\u0627\u0647\u064a\u0631",
+      "type": "fetch_info",
+      "time": "2026-03-15T13:26:58.336729"
+    },
+    {
+      "command": "\u0627\u0641\u062a\u062d \u0644\u064a \u0641\u064a\u062f\u064a\u0648 \u0639\u0644\u0649 \u0627\u0644\u064a\u0648\u062a\u064a\u0648\u0628 \u0639\u0646 \u0627\u062e\u0628\u0627\u0631 \u0627\u0644\u064a\u0648\u0645",
+      "type": "conversation",
+      "time": "2026-03-15T13:28:01.666762"
+    },
+    {
+      "command": "open a videp youtube about news",
+      "type": "conversation",
+      "time": "2026-03-15T13:28:23.948869"
+    },
+    {
+      "command": "\u062a\u0647\u062f\u0631 \u0627\u0644\u062f\u0627\u0631\u062c\u0629",
+      "type": "conversation",
+      "time": "2026-03-15T14:41:51.739228"
+    },
+    {
+      "command": "\u0643\u064a\u0641 \u0647\u0648 \u0627\u0644\u0637\u0642\u0633 \u0627\u0644\u0627\u0646 \u0641\u064a \u0627\u0644\u0637\u0627\u0647\u064a\u0631",
+      "type": "fetch_info",
+      "time": "2026-03-15T14:46:21.938896"
+    },
+    {
+      "command": "news of today",
+      "type": "fetch_info",
+      "time": "2026-03-15T14:47:38.835727"
+    },
+    {
+      "command": "give me the most actions that happend today",
+      "type": "fetch_info",
+      "time": "2026-03-15T14:48:22.250652"
+    },
+    {
+      "command": "open a video on  youtube about war",
+      "type": "conversation",
+      "time": "2026-03-15T14:49:52.057398"
+    },
+    {
+      "command": "open a youtube video about war",
+      "type": "command",
+      "time": "2026-03-15T14:50:03.187996"
+    },
+    {
+      "command": "open any video on youtube not just a simple search",
+      "type": "command",
+      "time": "2026-03-15T14:50:51.704477"
+    },
+    {
+      "command": "hola",
+      "type": "conversation",
+      "time": "2026-03-15T15:17:00.097077"
+    },
+    {
+      "command": "open a youtube video about nature",
+      "type": "command",
+      "time": "2026-03-15T15:17:31.304983"
+    },
+    {
+      "command": "\u0627\u0641\u062a\u062d\u0644\u064a \u0641\u064a\u062f\u064a\u0648 \u0641\u0627\u0644\u064a\u0648\u062a\u064a\u0648\u0628 \u0639\u0646 \u0627\u062e\u0628\u0627\u0631 \u0627\u0644\u064a\u0648\u0645",
+      "type": "command",
+      "time": "2026-03-15T15:24:41.462275"
+    },
+    {
+      "command": "open youtube documentary about earth",
+      "type": "command",
+      "time": "2026-03-15T15:29:37.390407"
+    },
+    {
+      "command": "\u0627\u0641\u062a\u062d\u0644\u064a \u0641\u064a\u062f\u064a\u0648 \u064a\u0648\u062a\u064a\u0648\u0628 \u0639\u0646 \u0627\u0644\u0641\u0631\u0627\u0634\u0627\u062a",
+      "type": "command",
+      "time": "2026-03-15T15:32:40.380396"
+    },
+    {
+      "command": "open estin univ web site",
+      "type": "command",
+      "time": "2026-03-15T15:33:16.392795"
+    },
+    {
+      "command": "wether today",
+      "type": "fetch_info",
+      "time": "2026-03-15T15:37:07.850807"
+    },
+    {
+      "command": "open a random video on youtube",
+      "type": "conversation",
+      "time": "2026-03-15T15:38:18.785613"
+    },
+    {
+      "command": "open a random video on youtube",
+      "type": "command",
+      "time": "2026-03-15T15:40:34.180109"
+    },
+    {
+      "command": "open estin univ website",
+      "type": "command",
+      "time": "2026-03-15T15:49:43.855597"
+    },
+    {
+      "command": "open tropix game link to install",
+      "type": "browser_interaction",
+      "time": "2026-03-15T15:50:54.928351"
+    },
+    {
+      "command": "open dzexam website",
+      "type": "command",
+      "time": "2026-03-15T15:51:41.342858"
+    },
+    {
+      "command": "open dzexam website",
+      "type": "command",
+      "time": "2026-03-15T15:52:15.563641"
+    },
+    {
+      "command": "open dzexam website",
+      "type": "command",
+      "time": "2026-03-15T15:54:48.614200"
+    },
+    {
+      "command": "open dzexams website",
+      "type": "command",
+      "time": "2026-03-15T15:55:33.324739"
+    },
+    {
+      "command": "search for a web site to download tropix game and open it",
+      "type": "browser_interaction",
+      "time": "2026-03-15T15:56:02.570406"
+    },
+    {
+      "command": "if u find it open it",
+      "type": "clarification",
+      "time": "2026-03-15T15:56:27.062575"
+    },
+    {
+      "command": "i don t have name or url u must search a website wich i can install tropix game and open it",
+      "type": "browser_interaction",
+      "time": "2026-03-15T15:57:12.671934"
+    },
+    {
+      "command": "search for a website to download tropix game and open it",
+      "type": "browser_interaction",
+      "time": "2026-03-15T15:59:54.685447"
+    },
+    {
+      "command": "search for a website to download tropix game and open it",
+      "type": "browser_interaction",
+      "time": "2026-03-15T16:03:09.769527"
+    },
+    {
+      "command": "search a website to download vs code and open it",
+      "type": "browser_interaction",
+      "time": "2026-03-15T16:04:17.490072"
+    },
+    {
+      "command": "search for a website to download outlook and open it",
+      "type": "browser_interaction",
+      "time": "2026-03-15T16:05:04.989091"
+    },
+    {
+      "command": "search a website to download tropix game and open it",
+      "type": "browser_interaction",
+      "time": "2026-03-15T16:10:10.220020"
+    },
+    {
+      "command": "\u0627\u0639\u062f \u0642\u0648\u0644 \u0647\u0630\u0647 \u0627\u0644\u0639\u0628\u0627\u0631\u0629  \" \u0627\u064a\u0627\u062f \u0627\u0637\u0641\u0627 \u0627\u0644\u062a\u0644\u0641\u0627\u0632\"",
+      "type": "conversation",
+      "time": "2026-03-15T20:11:24.874019"
+    },
+    {
+      "command": "\u0627\u0639\u062f \u0627\u0644\u0639\u0628\u0627\u0631\u0629 \" \u0627\u064a\u0627\u062f \u0627\u0637\u0641\u0627 \u0627\u0644\u062a\u0644\u0641\u0627\u0632\"",
+      "type": "conversation",
+      "time": "2026-03-15T20:11:50.037490"
+    },
+    {
+      "command": "what u can do",
+      "type": "conversation",
+      "time": "2026-03-15T20:48:48.868780"
+    },
+    {
+      "command": "open a random video on youtube about earth",
+      "type": "conversation",
+      "time": "2026-03-15T20:49:29.637587"
+    },
+    {
+      "command": "what can u do",
+      "type": "conversation",
+      "time": "2026-03-15T20:56:23.601909"
+    },
+    {
+      "command": "open a random youtube video",
+      "type": "command",
+      "time": "2026-03-15T20:57:19.218996"
+    },
+    {
+      "command": "what u can do",
+      "type": "conversation",
+      "time": "2026-03-15T21:33:40.200144"
+    },
+    {
+      "command": "open a random video on youtube",
+      "type": "command",
+      "time": "2026-03-15T21:36:45.972125"
+    },
+    {
+      "command": "open a website that i can download tropix game on it",
+      "type": "conversation",
+      "time": "2026-03-15T21:37:39.600590"
+    },
+    {
+      "command": "open estin website",
+      "type": "conversation",
+      "time": "2026-03-15T21:39:07.165151"
+    },
+    {
+      "command": "open estin website",
+      "type": "command",
+      "time": "2026-03-15T21:43:07.089801"
+    },
+    {
+      "command": "open a website to download tropix game",
+      "type": "command",
+      "time": "2026-03-15T21:43:53.699033"
+    },
+    {
+      "command": "open a website to downlod it not jus a simple search",
+      "type": "command",
+      "time": "2026-03-15T21:44:36.934246"
+    },
+    {
+      "command": "tropix game",
+      "type": "command",
+      "time": "2026-03-15T21:45:14.690075"
+    },
+    {
+      "command": "not just a search open a website to download tropix game",
+      "type": "command",
+      "time": "2026-03-15T21:45:48.524608"
+    },
+    {
+      "command": "open a website to download adobe photoshop",
+      "type": "command",
+      "time": "2026-03-15T21:46:15.628471"
+    },
+    {
+      "command": "open a website to download photoshop",
+      "type": "command",
+      "time": "2026-03-15T21:47:04.364370"
+    },
+    {
+      "command": "open a random website",
+      "type": "command",
+      "time": "2026-03-15T22:15:53.908700"
+    },
+    {
+      "command": "tell me a story",
+      "type": "conversation",
+      "time": "2026-03-15T22:16:33.816645"
+    },
+    {
+      "command": "i want to download photoshop",
+      "type": "command",
+      "time": "2026-03-15T22:19:09.574299"
+    },
+    {
+      "command": "i want to download tropix game",
+      "type": "command",
+      "time": "2026-03-15T22:19:37.514302"
+    },
+    {
+      "command": "i want to download counter strike",
+      "type": "command",
+      "time": "2026-03-15T22:20:13.790392"
+    },
+    {
+      "command": "+",
+      "type": "conversation",
+      "time": "2026-03-15T22:20:54.535809"
+    },
+    {
+      "command": "i want to do a simple python code on visuel studio code",
+      "type": "workflow",
+      "time": "2026-03-15T22:21:00.647715"
+    },
+    {
+      "command": "+ .",
+      "type": "conversation",
+      "time": "2026-03-15T22:21:01.881170"
+    },
+    {
+      "command": "creat a simple python code on vscode",
+      "type": "command",
+      "time": "2026-03-15T22:30:32.837048"
+    },
+    {
+      "command": "write a small python code on vscode",
+      "type": "command",
+      "time": "2026-03-15T22:35:47.486091"
+    },
+    {
+      "command": "write a simple java code on vs code",
+      "type": "command",
+      "time": "2026-03-15T22:38:52.916360"
+    },
+    {
+      "command": "write a simple python code on vscode",
+      "type": "command",
+      "time": "2026-03-15T22:39:51.648066"
+    },
+    {
+      "command": "write a c code on vscode",
+      "type": "command",
+      "time": "2026-03-15T22:42:51.966009"
+    },
+    {
+      "command": "write a c code on vscode",
+      "type": "command",
+      "time": "2026-03-15T22:45:38.024320"
+    },
+    {
+      "command": "write a python code on vscode",
+      "type": "command",
+      "time": "2026-03-15T22:47:29.031487"
+    },
+    {
+      "command": "i didn t find it open it",
+      "type": "command",
+      "time": "2026-03-15T22:48:04.849886"
+    },
+    {
+      "command": "open it on visuel studio code",
+      "type": "command",
+      "time": "2026-03-15T22:49:53.595364"
+    },
+    {
+      "command": "open the code on visuel studio code",
+      "type": "command",
+      "time": "2026-03-15T22:50:15.642845"
+    },
+    {
+      "command": "write a python code that perform arithmitic on visiuel studio code",
+      "type": "command",
+      "time": "2026-03-15T22:51:04.589115"
+    },
+    {
+      "command": "write a code explain how use arrays in c language on visuel studio code",
+      "type": "command",
+      "time": "2026-03-15T22:55:37.463275"
+    },
+    {
+      "command": "write a code explain arrays in c on vscode",
+      "type": "command",
+      "time": "2026-03-15T22:58:57.871617"
+    },
+    {
+      "command": "i want to study analyse 4",
+      "type": "knowledge",
+      "time": "2026-03-15T22:59:13.648132"
+    },
+    {
+      "command": "i want playlist to study analyse 4 in french",
+      "type": "conversation",
+      "time": "2026-03-15T23:00:20.964823"
+    },
+    {
+      "command": "where is the playlist",
+      "type": "clarification",
+      "time": "2026-03-15T23:01:02.693164"
+    },
+    {
+      "command": "youtube",
+      "type": "conversation",
+      "time": "2026-03-15T23:01:14.280710"
+    },
+    {
+      "command": "waiting",
+      "type": "conversation",
+      "time": "2026-03-15T23:01:23.705459"
+    },
+    {
+      "command": "open the playlist",
+      "type": "conversation",
+      "time": "2026-03-15T23:01:36.562403"
+    }
+  ],
+  "hourly_activity": {
+    "22": 28,
+    "23": 34,
+    "0": 13,
+    "1": 10,
+    "9": 1,
+    "10": 21,
+    "11": 13,
+    "12": 22,
+    "13": 12,
+    "14": 7,
+    "15": 19,
+    "16": 4,
+    "20": 6,
+    "21": 11
+  },
+  "daily_activity": {
+    "Saturday": 35,
+    "Sunday": 166
+  },
+  "type_frequency": {
+    "conversation": 107,
+    "command": 49,
+    "knowledge": 6,
+    "workflow": 8,
+    "clarification": 7,
+    "fetch_info": 16,
+    "browser_interaction": 8
+  }
+}

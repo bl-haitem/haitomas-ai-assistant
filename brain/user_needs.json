@@ -1,0 +1,22 @@
+[
+    {
+        "pattern": "custom_greeting",
+        "description": "User preference for greetings",
+        "user_preference": "The user prefers to be called 'Commander' and wants a system status report with every greeting.",
+        "examples": [
+            {
+                "user": "hi",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Greeting, Commander. All systems are nominal. CPU at 15%."
+                    },
+                    {
+                        "action": "system_query",
+                        "param": "cpu"
+                    }
+                ]
+            }
+        ]
+    }
+]

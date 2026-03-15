@@ -1,0 +1,42 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# --- Environments ---
+assistant_env/
+env/
+venv/
+ENV/
+
+# --- Config & Secrets (IMPORTANT) ---
+config/config.json
+.env
+*.key
+
+# --- Temp & Logs ---
+*.log
+temp_voice.mp3
+test_errors.txt
+test_output.txt
+test_results.txt
+test_audio.py
+test_mouse.py
+test_tts.py
+verify_audio.py
+
+# --- User Projects ---
+HaitomasProjects/
+
+# --- IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- System ---
+Thumbs.db
+Desktop.ini
+nul

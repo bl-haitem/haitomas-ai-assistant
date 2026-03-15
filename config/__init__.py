@@ -1,0 +1,1 @@
+# HAITOMAS Config Module

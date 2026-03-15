@@ -1,0 +1,58 @@
+# ═══════════════════════════════════════════
+# HAITOMAS ASSISTANT — Dependencies
+# ═══════════════════════════════════════════
+
+# ── Core AI ──
+google-generativeai
+requests
+aiohttp
+
+# ── Automation ──
+pyautogui
+playwright
+psutil
+
+# ── Vision ──
+opencv-python
+pytesseract
+mss
+numpy
+Pillow
+
+# ── Voice ──
+openai-whisper
+pyttsx3
+sounddevice
+soundfile
+scipy
+
+# ── Memory ──
+faiss-cpu
+sentence-transformers
+
+# ── Research ──
+duckduckgo_search
+beautifulsoup4
+lxml
+trafilatura
+
+# ── Dashboard ──
+fastapi
+uvicorn[standard]
+websockets
+
+# ── PDF Generation ──
+fpdf2
+
+# ── Utilities ──
+python-dotenv
+# Added for Stable Web Automation
+selenium
+webdriver-manager
+
+# ── Gemini Live & Advanced Vision ──
+google-genai
+pyaudio
+opencv-python
+mss
+Pillow

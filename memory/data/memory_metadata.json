@@ -1,0 +1,87 @@
+[
+  {
+    "text": "hi",
+    "type": "conversation",
+    "result": "HAITOMAS online. All systems nominal. How can I assist you, Commander?"
+  },
+  {
+    "text": "hi",
+    "type": "conversation",
+    "result": "HAITOMAS online. All systems nominal. How can I assist you, Commander?"
+  },
+  {
+    "text": "hello",
+    "type": "conversation",
+    "result": "HAITOMAS online. All systems nominal. How can I assist you, Commander?"
+  },
+  {
+    "text": "\u062a\u0647\u062f\u0631 \u0627\u0644\u062f\u0627\u0631\u062c\u0629",
+    "type": "conversation",
+    "result": "HAITOMAS \u0645\u062a\u0635\u0644. \u062c\u0645\u064a\u0639 \u0627\u0644\u0623\u0646\u0638\u0645\u0629 \u0641\u064a \u0648\u0636\u0639\u0647\u0627 \u0627\u0644\u0637\u0628\u064a\u0639\u064a. \u0643\u064a\u0641 \u064a\u0645\u0643\u0646\u0646\u064a \u0645\u0633\u0627\u0639\u062f\u062a\u0643\u060c \u0623\u064a\u0647\u0627 \u0627\u0644\u0642\u0627\u0626\u062f\u061f"
+  },
+  {
+    "text": "why this error",
+    "type": "conversation",
+    "result": "HAITOMAS online. All systems nominal. How can I assist you, Commander?"
+  },
+  {
+    "text": "open estin.dz",
+    "type": "command",
+    "result": "Navigation error: "
+  },
+  {
+    "text": "open youtube documentary about earth",
+    "type": "command",
+    "result": "YouTube error: "
+  },
+  {
+    "text": "\u0627\u0641\u062a\u062d\u0644\u064a \u0641\u064a\u062f\u064a\u0648 \u064a\u0648\u062a\u064a\u0648\u0628 \u0639\u0646 \u0627\u0644\u0641\u0631\u0627\u0634\u0627\u062a",
+    "type": "command",
+    "result": "\u25b6\ufe0f Now playing on YouTube: \u0645\u0639\u0644\u0648\u0645\u0627\u062a \u0637\u0631\u064a\u0641\u0629 \u0648\u0645\u0645\u062a\u0639\u0629 \u0642\u062f \u0644\u0627 \u062a\u0639\u0631\u0641\u0647\u0627 \u0639\u0646 \u0627\u0644\u0641\u0631\u0627\u0634\u0627\u062a \ud83e\udd8b \u0633\u0644\u0633\u0644\u0629 \u0639\u0627\u0644\u0645 \u0627\u0644\u062d\u064a\u0648\u0627\u0646"
+  },
+  {
+    "text": "open estin univ web site",
+    "type": "command",
+    "result": "Navigation error: cannot switch to a different thread (which happens to have exited)"
+  },
+  {
+    "text": "open estin.dz",
+    "type": "command",
+    "result": "Navigation error: cannot switch to a different thread (which happens to have exited)"
+  },
+  {
+    "text": "hi",
+    "type": "conversation",
+    "result": "HAITOMAS online. All systems nominal. How can I assist you, Commander?"
+  },
+  {
+    "text": "open estin.dz",
+    "type": "command",
+    "result": "Navigation error: cannot switch to a different thread (which happens to have exited)"
+  },
+  {
+    "text": "open estin.dz",
+    "type": "command",
+    "result": "Navigation error: "
+  },
+  {
+    "text": "wether today",
+    "type": "fetch_info",
+    "result": "Okay, here's a friendly and professional weather update for Jijel based on the provided data:\n\n**Weather Update for Jijel**\n\n\"Currently in Jijel, we're experiencing light rain accompanied by thunderstorms. The temperature is a cool +8\u00b0C. Expect overcast skies with a wind from the [Assuming SW based "
+  },
+  {
+    "text": "open estin.dz",
+    "type": "command",
+    "result": "Navigation error: "
+  },
+  {
+    "text": "open a random video on youtube",
+    "type": "conversation",
+    "result": "{'type': 'play_youtube_video', 'query': 'random video'}"
+  },
+  {
+    "text": "open a random video on youtube",
+    "type": "command",
+    "result": "YouTube error: "
+  }
+]

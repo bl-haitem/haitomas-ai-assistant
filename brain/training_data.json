@@ -1,0 +1,1548 @@
+[
+    {
+        "intent": "human_interaction",
+        "description": "Simulate real human behavior using wait, hotkeys, and chained actions.",
+        "examples": [
+            {
+                "user": "open youtub and search for cat videos",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening YouTube and performing a human-like search."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com"
+                    },
+                    {
+                        "action": "wait",
+                        "param": "3"
+                    },
+                    {
+                        "action": "hotkey",
+                        "param": "ctrl+l"
+                    },
+                    {
+                        "action": "type",
+                        "param": "cat videos"
+                    },
+                    {
+                        "action": "press",
+                        "param": "enter"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "intent": "summarize_to_latex",
+        "description": "Summarize long academic text and generate a LaTeX PDF report with resources.",
+        "examples": [
+            {
+                "user": "summarize and make a pdf of this lesson: 'The cell is the basic unit of life...'",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Summarizing the biology lesson and generating your PDF report."
+                    },
+                    {
+                        "action": "create_study_report",
+                        "title": "Cell Biology Study Guide",
+                        "param": "Summary of Cell Theory and components...",
+                        "resources": [
+                            "https://en.wikipedia.org/wiki/Cell_biology"
+                        ]
+                    },
+                    {
+                        "action": "web_search",
+                        "param": "advanced cell biology lectures"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "intent": "extract_and_search_from_text",
+        "description": "Read pasted lecture text, slides, or chapter titles. Extract the topic and subtopics. ALWAYS open two parallel tracks: one YouTube search tab with the best educator for that field, and one web resource tab with the best reference site for that field. Both tracks are mandatory for every search.",
+        "rule": "Every resource search MUST open at minimum: (1) a YouTube search tab targeting a known educator for the field, AND (2) a web article or documentation tab. Never open only one.",
+        "examples": [
+            {
+                "user": "find resources for this: 'In this lecture we cover Dijkstra algorithm, shortest path trees, and relaxation in weighted graphs'",
+                "extracted": {
+                    "topic": "Dijkstra algorithm",
+                    "subtopics": [
+                        "shortest path",
+                        "weighted graphs",
+                        "edge relaxation"
+                    ],
+                    "field": "algorithms",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Dijkstra algorithm and shortest paths. Opening YouTube with Abdul Bari AND GeeksForGeeks AND a visual simulator."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=Dijkstra+algorithm+Abdul+Bari"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=Dijkstra+shortest+path+explained+with+example"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/dijkstras-shortest-path-algorithm-greedy-algo-7/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://visualgo.net/en/sssp"
+                    }
+                ]
+            },
+            {
+                "user": "find resources for this: 'Chapter 3 covers Fourier Transform, convolution theorem, and frequency domain analysis for signal processing'",
+                "extracted": {
+                    "topic": "Fourier Transform",
+                    "subtopics": [
+                        "convolution theorem",
+                        "frequency domain",
+                        "signal processing"
+                    ],
+                    "field": "signals and systems",
+                    "type": "textbook chapter"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Fourier Transform and signal processing. Opening 3Blue1Brown on YouTube AND MIT OCW AND Paul's Math Notes."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=Fourier+Transform+3Blue1Brown"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=Fourier+transform+signal+processing+Neso+Academy"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://tutorial.math.lamar.edu/Classes/DE/FourierSeries.aspx"
+                    }
+                ]
+            },
+            {
+                "user": "search resources from this: 'We introduce Big O notation, time complexity, space complexity, quicksort and mergesort'",
+                "extracted": {
+                    "topic": "complexity analysis and sorting",
+                    "subtopics": [
+                        "Big O",
+                        "time complexity",
+                        "space complexity",
+                        "quicksort",
+                        "mergesort"
+                    ],
+                    "field": "algorithms",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Big O and sorting algorithms. Opening Abdul Bari YouTube AND GeeksForGeeks AND VisuAlgo."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=Big+O+notation+time+complexity+Abdul+Bari"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=quicksort+mergesort+explained+with+code"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://visualgo.net/en/sorting"
+                    }
+                ]
+            },
+            {
+                "user": "find resources from this slide: 'This week: binary trees, AVL trees, rotations, and balanced BST operations'",
+                "extracted": {
+                    "topic": "AVL trees",
+                    "subtopics": [
+                        "binary trees",
+                        "tree rotations",
+                        "balanced BST"
+                    ],
+                    "field": "data structures",
+                    "type": "slide"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: AVL trees and BST rotations. Opening YouTube explanation AND GeeksForGeeks AND an interactive tree visualizer."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=AVL+tree+rotations+explained+Abdul+Bari"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=balanced+BST+AVL+tree+insertion+deletion"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/avl-tree-set-1-insertion/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://visualgo.net/en/bst"
+                    }
+                ]
+            },
+            {
+                "user": "find resources for this text: 'Topics include OS process scheduling, CPU scheduling algorithms, round robin, FCFS, and priority scheduling'",
+                "extracted": {
+                    "topic": "CPU scheduling",
+                    "subtopics": [
+                        "process scheduling",
+                        "round robin",
+                        "FCFS",
+                        "priority scheduling"
+                    ],
+                    "field": "operating systems",
+                    "type": "course outline"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: CPU scheduling algorithms. Opening Neso Academy on YouTube AND OSTEP free textbook AND GeeksForGeeks."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=CPU+scheduling+round+robin+FCFS+Neso+Academy"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=operating+system+scheduling+algorithms+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/"
+                    }
+                ]
+            },
+            {
+                "user": "help me learn from this: 'Neural networks: perceptron, activation functions, backpropagation, gradient descent, loss functions'",
+                "extracted": {
+                    "topic": "neural networks",
+                    "subtopics": [
+                        "perceptron",
+                        "backpropagation",
+                        "gradient descent",
+                        "activation functions",
+                        "loss functions"
+                    ],
+                    "field": "machine learning",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Neural networks and backpropagation. Opening 3Blue1Brown YouTube series AND CS231n Stanford AND TensorFlow Playground."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=backpropagation+explained+step+by+step"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://cs231n.github.io/neural-networks-1/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://playground.tensorflow.org/"
+                    }
+                ]
+            },
+            {
+                "user": "find resources for this: 'Lecture 7 covers memory management: paging, segmentation, virtual memory, and page replacement algorithms'",
+                "extracted": {
+                    "topic": "memory management",
+                    "subtopics": [
+                        "paging",
+                        "segmentation",
+                        "virtual memory",
+                        "page replacement"
+                    ],
+                    "field": "operating systems",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Paging, virtual memory. Opening Neso Academy YouTube AND OSTEP memory chapter AND GeeksForGeeks."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=paging+virtual+memory+operating+systems+Neso+Academy"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=page+replacement+algorithms+FIFO+LRU+optimal"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://pages.cs.wisc.edu/~remzi/OSTEP/vm-paging.pdf"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/paging-in-operating-system/"
+                    }
+                ]
+            },
+            {
+                "user": "from my professor: 'Finite automata, regular expressions, context-free grammars, pushdown automata'",
+                "extracted": {
+                    "topic": "automata theory",
+                    "subtopics": [
+                        "finite automata",
+                        "regular expressions",
+                        "context-free grammars",
+                        "pushdown automata"
+                    ],
+                    "field": "theory of computation",
+                    "type": "course topic"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Theory of computation. Opening YouTube lectures AND MIT OCW AND GeeksForGeeks automata guide."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=finite+automata+DFA+NFA+theory+of+computation+Neso+Academy"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=context+free+grammar+pushdown+automata+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/theory-of-computation-automata-tutorials/"
+                    }
+                ]
+            },
+            {
+                "user": "find resources for this lecture: 'Lecture on deadlocks: necessary conditions, prevention, avoidance, Banker algorithm'",
+                "extracted": {
+                    "topic": "deadlocks in operating systems",
+                    "subtopics": [
+                        "deadlock conditions",
+                        "deadlock prevention",
+                        "Banker algorithm"
+                    ],
+                    "field": "operating systems",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: OS deadlocks and Banker's algorithm. Opening Neso Academy YouTube AND OSTEP deadlock chapter AND GeeksForGeeks."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=deadlock+operating+system+Banker+algorithm+Neso+Academy"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=deadlock+prevention+avoidance+detection+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://pages.cs.wisc.edu/~remzi/OSTEP/threads-bugs.pdf"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/deadlock-in-operating-system/"
+                    }
+                ]
+            },
+            {
+                "user": "find resources for this: 'Kirchhoff voltage law, mesh analysis, nodal analysis for circuit solving'",
+                "extracted": {
+                    "topic": "circuit analysis",
+                    "subtopics": [
+                        "KVL",
+                        "KCL",
+                        "mesh analysis",
+                        "nodal analysis"
+                    ],
+                    "field": "electrical engineering",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: KVL, mesh and nodal analysis. Opening The Engineering Mindset YouTube AND All About Circuits AND Falstad simulator."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=mesh+analysis+nodal+analysis+circuits+Engineering+Mindset"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=Kirchhoff+voltage+law+KVL+KCL+circuit+analysis+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.allaboutcircuits.com/textbook/direct-current/chpt-10/introduction-mesh-current-method/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.falstad.com/circuit/"
+                    }
+                ]
+            },
+            {
+                "user": "from this slide: 'Laplace transform, transfer functions, poles and zeros, frequency response'",
+                "extracted": {
+                    "topic": "Laplace transform and transfer functions",
+                    "subtopics": [
+                        "poles and zeros",
+                        "frequency response",
+                        "transfer functions"
+                    ],
+                    "field": "signals and control systems",
+                    "type": "slide"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Laplace and transfer functions. Opening Brian Douglas YouTube AND MIT OCW signals AND All About Circuits."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=Laplace+transform+transfer+function+Brian+Douglas"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=poles+zeros+frequency+response+control+systems+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://ctms.engin.umich.edu/CTMS/index.php?aux=Home"
+                    }
+                ]
+            },
+            {
+                "user": "find resources: 'graph theory, BFS, DFS, minimum spanning trees, Kruskal and Prim algorithms'",
+                "extracted": {
+                    "topic": "graph algorithms",
+                    "subtopics": [
+                        "BFS",
+                        "DFS",
+                        "minimum spanning tree",
+                        "Kruskal",
+                        "Prim"
+                    ],
+                    "field": "algorithms",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Graph algorithms. Opening William Fiset YouTube playlist AND VisuAlgo AND GeeksForGeeks."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=graph+algorithms+BFS+DFS+William+Fiset"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=minimum+spanning+tree+Kruskal+Prim+algorithm+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://visualgo.net/en/dfsbfs"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/"
+                    }
+                ]
+            },
+            {
+                "user": "find me resources for: 'SQL joins, normalization, ER diagrams, relational algebra'",
+                "extracted": {
+                    "topic": "relational databases",
+                    "subtopics": [
+                        "SQL joins",
+                        "normalization",
+                        "ER diagrams",
+                        "relational algebra"
+                    ],
+                    "field": "databases",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Databases and SQL. Opening CMU DB course YouTube AND SQLZoo practice AND GeeksForGeeks."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=SQL+joins+normalization+database+CMU+Andy+Pavlo"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=ER+diagram+relational+algebra+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://sqlzoo.net/wiki/SQL_Tutorial"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/sql-tutorial/"
+                    }
+                ]
+            },
+            {
+                "user": "find resources for: 'deep learning, CNNs, pooling layers, batch normalization, dropout regularization'",
+                "extracted": {
+                    "topic": "convolutional neural networks",
+                    "subtopics": [
+                        "CNN architecture",
+                        "pooling",
+                        "batch normalization",
+                        "dropout"
+                    ],
+                    "field": "deep learning",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: CNNs and deep learning. Opening Andrej Karpathy YouTube AND Stanford CS231n AND fast.ai."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=CNN+convolutional+neural+network+explained+Andrej+Karpathy"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=batch+normalization+dropout+deep+learning+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://cs231n.github.io/convolutional-networks/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.fast.ai/"
+                    }
+                ]
+            },
+            {
+                "user": "search for resources: 'statics: equilibrium, free body diagrams, moments, trusses'",
+                "extracted": {
+                    "topic": "engineering statics",
+                    "subtopics": [
+                        "equilibrium",
+                        "free body diagrams",
+                        "moments",
+                        "trusses"
+                    ],
+                    "field": "mechanical engineering",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Engineering statics. Opening The Organic Chemistry Tutor YouTube AND EngineeringCorps AND Engineering Toolbox."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=engineering+statics+free+body+diagram+equilibrium+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=trusses+method+of+joints+sections+statics"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.engineeringtoolbox.com/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/engineering-mechanics/"
+                    }
+                ]
+            },
+            {
+                "user": "resources for this: 'thermodynamics: first law, second law, Carnot cycle, entropy, heat engines'",
+                "extracted": {
+                    "topic": "thermodynamics",
+                    "subtopics": [
+                        "first law",
+                        "second law",
+                        "Carnot cycle",
+                        "entropy",
+                        "heat engines"
+                    ],
+                    "field": "thermodynamics / engineering",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Thermodynamics. Opening The Organic Chemistry Tutor YouTube AND MIT OCW AND Engineering Toolbox."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=thermodynamics+first+second+law+Carnot+cycle+Organic+Chemistry+Tutor"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=entropy+heat+engine+thermodynamics+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://ocw.mit.edu/courses/2-006-thermal-fluids-engineering-ii-spring-2008/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.engineeringtoolbox.com/"
+                    }
+                ]
+            },
+            {
+                "user": "find resources: 'dynamic programming, memoization, tabulation, knapsack problem, Fibonacci'",
+                "extracted": {
+                    "topic": "dynamic programming",
+                    "subtopics": [
+                        "memoization",
+                        "tabulation",
+                        "knapsack",
+                        "optimal substructure"
+                    ],
+                    "field": "algorithms",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Dynamic programming. Opening Back to Back SWE YouTube AND CP-Algorithms AND LeetCode DP problems."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=dynamic+programming+memoization+tabulation+Back+To+Back+SWE"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=knapsack+problem+dynamic+programming+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://cp-algorithms.com/dynamic_programming/intro-to-dp.html"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://leetcode.com/tag/dynamic-programming/"
+                    }
+                ]
+            },
+            {
+                "user": "resources for: 'probability distributions, Bayes theorem, random variables, expectation and variance'",
+                "extracted": {
+                    "topic": "probability theory",
+                    "subtopics": [
+                        "probability distributions",
+                        "Bayes theorem",
+                        "random variables",
+                        "expectation",
+                        "variance"
+                    ],
+                    "field": "mathematics / statistics",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Probability theory. Opening StatQuest YouTube AND Khan Academy AND 3Blue1Brown Bayes video."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=probability+distributions+random+variables+StatQuest"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/watch?v=HZGCoVF3YvM"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.khanacademy.org/math/statistics-probability"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/probability/"
+                    }
+                ]
+            },
+            {
+                "user": "find resources for: 'linear algebra: matrix operations, eigenvalues, eigenvectors, SVD decomposition'",
+                "extracted": {
+                    "topic": "linear algebra",
+                    "subtopics": [
+                        "matrix operations",
+                        "eigenvalues",
+                        "eigenvectors",
+                        "SVD"
+                    ],
+                    "field": "mathematics",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Linear algebra. Opening 3Blue1Brown Essence of Linear Algebra YouTube AND MIT 18.06 OCW AND Khan Academy."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=eigenvalues+eigenvectors+SVD+explained+visually"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.khanacademy.org/math/linear-algebra"
+                    }
+                ]
+            },
+            {
+                "user": "find resources for: 'calculus: derivatives, chain rule, integration by parts, Taylor series'",
+                "extracted": {
+                    "topic": "calculus",
+                    "subtopics": [
+                        "derivatives",
+                        "chain rule",
+                        "integration by parts",
+                        "Taylor series"
+                    ],
+                    "field": "mathematics",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Calculus. Opening Professor Leonard YouTube AND 3Blue1Brown essence of calculus AND Paul's Math Notes."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=calculus+derivatives+chain+rule+Professor+Leonard"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.khanacademy.org/math/calculus-1"
+                    }
+                ]
+            },
+            {
+                "user": "resources for: 'computer vision, edge detection, image segmentation, feature extraction, SIFT'",
+                "extracted": {
+                    "topic": "computer vision",
+                    "subtopics": [
+                        "edge detection",
+                        "image segmentation",
+                        "feature extraction",
+                        "SIFT"
+                    ],
+                    "field": "computer vision / deep learning",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Computer vision. Opening Andrej Karpathy YouTube AND Stanford CS231n AND OpenCV docs."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=computer+vision+edge+detection+image+segmentation+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=SIFT+feature+extraction+computer+vision"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://cs231n.github.io/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://docs.opencv.org/4.x/d9/df8/tutorial_root.html"
+                    }
+                ]
+            },
+            {
+                "user": "resources for: 'network security, cryptography, symmetric encryption, RSA, digital signatures'",
+                "extracted": {
+                    "topic": "cryptography and network security",
+                    "subtopics": [
+                        "symmetric encryption",
+                        "RSA",
+                        "digital signatures",
+                        "public key infrastructure"
+                    ],
+                    "field": "cybersecurity / computer networks",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Cryptography. Opening Computerphile YouTube AND Khan Academy cryptography AND OWASP resources."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=RSA+encryption+explained+Computerphile"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=cryptography+symmetric+encryption+digital+signatures+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.khanacademy.org/computing/computer-science/cryptography"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://owasp.org/www-project-top-ten/"
+                    }
+                ]
+            },
+            {
+                "user": "find resources for: 'software engineering, design patterns, SOLID principles, UML diagrams'",
+                "extracted": {
+                    "topic": "software engineering and design patterns",
+                    "subtopics": [
+                        "SOLID principles",
+                        "design patterns",
+                        "UML",
+                        "clean architecture"
+                    ],
+                    "field": "software engineering",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Software design patterns. Opening Fireship YouTube AND Refactoring Guru AND GeeksForGeeks."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=SOLID+principles+design+patterns+explained+Fireship"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=UML+diagrams+software+engineering+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://refactoring.guru/design-patterns"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/software-engineering/"
+                    }
+                ]
+            },
+            {
+                "user": "resources for: 'recursive algorithms, divide and conquer, binary search, merge sort'",
+                "extracted": {
+                    "topic": "recursion and divide and conquer",
+                    "subtopics": [
+                        "recursion",
+                        "binary search",
+                        "merge sort",
+                        "divide and conquer"
+                    ],
+                    "field": "algorithms",
+                    "type": "lecture"
+                },
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Detected: Recursion and divide and conquer. Opening mycodeschool YouTube AND GeeksForGeeks AND VisuAlgo."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=recursion+divide+conquer+algorithms+mycodeschool"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=binary+search+merge+sort+recursion+explained+step+by+step"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/divide-and-conquer/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://visualgo.net/en/sorting"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "intent": "topic_to_dual_resources",
+        "description": "When user gives a topic name directly without pasted text, always open BOTH a YouTube search AND a web reference. Never open only one.",
+        "rule": "Minimum two tabs always: one YouTube, one web article or documentation.",
+        "examples": [
+            {
+                "user": "find resources for dynamic programming",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening YouTube with Back to Back SWE AND CP-Algorithms web reference AND LeetCode practice."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=dynamic+programming+explained+Back+To+Back+SWE"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=dynamic+programming+patterns+interview+problems"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://cp-algorithms.com/dynamic_programming/intro-to-dp.html"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://leetcode.com/tag/dynamic-programming/"
+                    }
+                ]
+            },
+            {
+                "user": "study linked lists",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening YouTube walkthrough AND VisuAlgo visualizer AND GeeksForGeeks reference."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=linked+list+explained+with+code+mycodeschool"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=singly+doubly+circular+linked+list+operations"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://visualgo.net/en/list"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/data-structures/linked-list/"
+                    }
+                ]
+            },
+            {
+                "user": "learn about linear algebra for machine learning",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening 3Blue1Brown playlist YouTube AND MIT 18.06 OCW AND fast.ai math for ML."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=linear+algebra+machine+learning+Gilbert+Strang"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.fast.ai/posts/2017-07-17-num-lin-alg.html"
+                    }
+                ]
+            },
+            {
+                "user": "learn about TCP IP and networking",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening Neso Academy YouTube AND GeeksForGeeks networking AND Kurose Ross textbook site."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=TCP+IP+model+explained+Neso+Academy"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=computer+networks+full+course+Sunny+Classroom"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/computer-network-tutorials/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://gaia.cs.umass.edu/kurose_ross/index.php"
+                    }
+                ]
+            },
+            {
+                "user": "I need to study differential equations",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening Professor Leonard YouTube AND 3Blue1Brown differential equations AND Paul's Math Notes."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=differential+equations+full+course+Professor+Leonard"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=differential+equations+3Blue1Brown+visual"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://tutorial.math.lamar.edu/Classes/DE/DE.aspx"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://ocw.mit.edu/courses/18-03-differential-equations-spring-2010/"
+                    }
+                ]
+            },
+            {
+                "user": "study control systems and PID",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening Brian Douglas YouTube AND CTMS Michigan AND MathWorks PID guide."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=PID+controller+control+systems+Brian+Douglas"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=control+systems+root+locus+Bode+plot+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://ctms.engin.umich.edu/CTMS/index.php?aux=Home"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.mathworks.com/discovery/pid-control.html"
+                    }
+                ]
+            },
+            {
+                "user": "find resources for electronic circuits and op amps",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening Engineering Mindset YouTube AND All About Circuits AND Falstad circuit simulator."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=op+amp+circuits+explained+Engineering+Mindset"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=operational+amplifier+inverting+non+inverting+tutorial"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.allaboutcircuits.com/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.falstad.com/circuit/"
+                    }
+                ]
+            },
+            {
+                "user": "find resources for compiler design and parsing",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening YouTube compiler course AND Stanford CS143 AND GeeksForGeeks compiler tutorials."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=compiler+design+lexical+analysis+parsing+LL+LR"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=compiler+design+full+course+Ravindrababu+Ravula"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://web.stanford.edu/class/cs143/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/compiler-design-tutorials/"
+                    }
+                ]
+            },
+            {
+                "user": "find me resources to practice competitive programming",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening Errichto YouTube AND Codeforces AND CP-Algorithms AND AtCoder."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=competitive+programming+tips+Errichto"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=competitive+programming+algorithms+William+Lin"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://cp-algorithms.com/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://codeforces.com/"
+                    }
+                ]
+            },
+            {
+                "user": "resources for machine learning and regression models",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening StatQuest YouTube AND Andrew Ng Coursera AND scikit-learn docs."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=linear+regression+logistic+regression+StatQuest"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=machine+learning+Andrew+Ng+regression+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.coursera.org/specializations/machine-learning-introduction"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "intent": "smart_youtube_only",
+        "description": "User explicitly asks for YouTube videos only. Open multiple targeted YouTube searches using the best channel for the field.",
+        "rule": "Only open YouTube tabs. At least two different search queries targeting different educators or angles on the same topic.",
+        "examples": [
+            {
+                "user": "find youtube videos for binary search trees",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening two YouTube searches: Abdul Bari for BST theory and mycodeschool for BST implementation."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=binary+search+tree+Abdul+Bari"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=binary+search+tree+insert+delete+search+mycodeschool"
+                    }
+                ]
+            },
+            {
+                "user": "youtube videos for gradient descent",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening 3Blue1Brown visual explanation and StatQuest ML breakdown for gradient descent."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=gradient+descent+3Blue1Brown+neural+networks"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=gradient+descent+machine+learning+StatQuest+explained"
+                    }
+                ]
+            },
+            {
+                "user": "youtube videos for calculus integration",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening Professor Leonard full lectures and The Organic Chemistry Tutor for calculus integration."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=integration+calculus+Professor+Leonard"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=calculus+integration+techniques+Organic+Chemistry+Tutor"
+                    }
+                ]
+            },
+            {
+                "user": "find youtube tutorials for networking OSI model",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening Neso Academy and Sunny Classroom for the OSI model on YouTube."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=OSI+model+layers+explained+Neso+Academy"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=OSI+model+TCP+IP+Sunny+Classroom"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "intent": "smart_web_only",
+        "description": "User explicitly asks for web articles, documentation, or written resources only. No YouTube tabs.",
+        "rule": "Only open web article, documentation, or reference tabs. No YouTube.",
+        "examples": [
+            {
+                "user": "find written articles on hash maps",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening GeeksForGeeks hash map reference AND CP-Algorithms hashing guide."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.geeksforgeeks.org/hashing-data-structure/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://cp-algorithms.com/string/string-hashing.html"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://visualgo.net/en/hashtable"
+                    }
+                ]
+            },
+            {
+                "user": "find web documentation for python numpy",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening official NumPy docs AND a quick reference cheatsheet."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://numpy.org/doc/stable/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/numpy-tutorial/"
+                    }
+                ]
+            },
+            {
+                "user": "find articles about operating system scheduling",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Opening OSTEP free book chapter AND GeeksForGeeks OS scheduling."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched.pdf"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/cpu-scheduling-in-operating-systems/"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "intent": "course_resource_bundle_dual_track",
+        "description": "When the user says they are starting or studying a full course, open a complete bundle with BOTH YouTube playlists and web references, never just one.",
+        "rule": "Course bundles must always contain at least one YouTube playlist tab AND at least one web documentation or textbook tab.",
+        "examples": [
+            {
+                "user": "I am starting a data structures and algorithms course",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Full DSA bundle: Abdul Bari YouTube playlist, William Fiset graphs, VisuAlgo, GeeksForGeeks, and LeetCode."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=data+structures+algorithms+full+course+Abdul+Bari"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=graph+algorithms+William+Fiset+full+playlist"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://visualgo.net/en"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/data-structures/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://leetcode.com/explore/"
+                    }
+                ]
+            },
+            {
+                "user": "I am taking an operating systems course",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "OS bundle: Neso Academy YouTube, OSTEP free textbook, and GeeksForGeeks OS section."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=operating+systems+full+course+Neso+Academy"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=operating+systems+lectures+Gary+Explains"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/operating-systems/"
+                    }
+                ]
+            },
+            {
+                "user": "I just started a machine learning course",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "ML bundle: 3Blue1Brown neural nets YouTube, Andrew Ng Coursera, fast.ai, and Kaggle Learn."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=machine+learning+Andrew+Ng+Stanford+full+lecture"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.coursera.org/specializations/machine-learning-introduction"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.fast.ai/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.kaggle.com/learn"
+                    }
+                ]
+            },
+            {
+                "user": "I am studying signals and systems this semester",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Signals bundle: Neso Academy YouTube, Alan Oppenheim MIT lectures, OCW, and DSP Related."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=signals+and+systems+full+course+Neso+Academy"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=Alan+Oppenheim+signals+systems+MIT+lectures"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.dsprelated.com/"
+                    }
+                ]
+            },
+            {
+                "user": "I have a computer networks exam coming up",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Networks exam bundle: Neso Academy, Sunny Classroom, Kurose-Ross slides, and GeeksForGeeks."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=computer+networks+full+course+Neso+Academy"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=computer+networks+Sunny+Classroom+OSI+TCP+IP"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://gaia.cs.umass.edu/kurose_ross/slides.php"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/computer-network-tutorials/"
+                    }
+                ]
+            },
+            {
+                "user": "I am studying web development with python and django",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Web dev bundle: Corey Schafer Django YouTube, MDN Docs, The Odin Project, and official Django docs."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=Django+full+course+Corey+Schafer"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=Python+web+development+Flask+Django+tutorial"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://docs.djangoproject.com/en/stable/intro/tutorial01/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://developer.mozilla.org/en-US/docs/Learn"
+                    }
+                ]
+            },
+            {
+                "user": "starting a deep learning course",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Deep learning bundle: Andrej Karpathy YouTube, Stanford CS231n, fast.ai, and PyTorch docs."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=deep+learning+from+scratch+Andrej+Karpathy"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://cs231n.github.io/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.fast.ai/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://pytorch.org/tutorials/"
+                    }
+                ]
+            },
+            {
+                "user": "I need to study discrete mathematics",
+                "plan": [
+                    {
+                        "action": "speak",
+                        "param": "Discrete math bundle: TrevTutor YouTube, MIT OCW, and Brilliant.org."
+                    },
+                    {
+                        "action": "web_open",
+                        "param": "https://www.youtube.com/results?search_query=discrete+mathematics+full+course+TrevTutor"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.youtube.com/results?search_query=discrete+math+logic+sets+graph+theory+explained"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/"
+                    },
+                    {
+                        "action": "web_open_tab",
+                        "param": "https://www.geeksforgeeks.org/discrete-mathematics-tutorial/"
+                    }
+                ]
+            }
+        ]
+    }
+]

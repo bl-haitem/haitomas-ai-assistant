@@ -1,0 +1,1 @@
+# HAITOMAS Core Module
